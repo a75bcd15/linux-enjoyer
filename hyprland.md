@@ -1,5 +1,4 @@
 # Grub x Hyprland
-
 - [Grub x Hyprland](#grub-x-hyprland)
   - [Эстетичная загрузка](#эстетичная-загрузка)
     - [Загрузка UEFI](#загрузка-uefi)
@@ -22,7 +21,6 @@
     - [Менеджер буфера обмена](#менеджер-буфера-обмена)
 
 ## Эстетичная загрузка
-
 ### Загрузка UEFI
 
 Нужно скрыть все текстовые сообщения, которые выводит ядро Linux сразу после UEFI, чтобы был плавный переход к GRUB. В файле `/etc/default/grub` в строке `GRUB_CMDLINE_LINUX_DEFAULT` добавь параметры `quiet loglevel=3 vt.global_cursor_default=0`:
@@ -71,17 +69,16 @@ border_fg = 0x00F82D96
    3. Пересобери `initramfs`: `sudo mkinitcpio -P`
 
 ## Hyprland Экосистема
-
 ### Must-have пакеты
 
 Список взят из официальной [вики](https://wiki.hypr.land/Useful-Utilities/Must-have/). Проверить, установлены ли они:
 ``` bash
-for pkg in pipewire wireplumber xdg-desktop-portal-hyprland hyprpolkitagent qt5-wayland qt6-wayland noto-fonts dunst mako fnott swaync; do pacman -Q $pkg &>/dev/null && echo -e "\e[32m[Установлен]\e[0m $pkg" || echo -e "\e[31m[Отсутствует]\e[0m $pkg"; done
+for pkg in pipewire playerctl wireplumber xdg-desktop-portal-hyprland hyprpolkitagent qt5-wayland qt6-wayland noto-fonts dunst mako fnott swaync; do pacman -Q $pkg &>/dev/null && echo -e "\e[32m[Установлен]\e[0m $pkg" || echo -e "\e[31m[Отсутствует]\e[0m $pkg"; done
 ``` 
 
 Среди демонов уведомлений `dunst`/`mako`/`fnott`/`swaync` достаточно иметь один, все четыре ставить не нужно. Устаноновить перечисленные пакеты:
 ``` bash
-sudo pacman -S --needed pipewire wireplumber xdg-desktop-portal-hyprland hyprpolkitagent qt5-wayland qt6-wayland noto-fonts dunst
+sudo pacman -S --needed pipewire playerctl wireplumber xdg-desktop-portal-hyprland hyprpolkitagent qt5-wayland qt6-wayland noto-fonts dunst
 ``` 
 
 ### Пользовательские приложения

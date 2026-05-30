@@ -1,20 +1,20 @@
 # Навигация по репозиторию
 Здесь собраны мои конспекты и конфиги, которые я использую. Описываю проблемы, с которыми сталкивалась, и пути их решения. 
 
-Буквально вчера поставила Arch Linux в качестве основной системы. Буду ломать и строить, чтобы разобраться как всё устроено. Очень много пользуюсь нейронками, но хочу в будущем возвращаться к старым заметкам и улучшать их.
-
 ## Linux
+### Основы
 - [Виртуализация](vm.md);
-- [Установка Arch](first-steps.md);
-- [Настройка рабочего стола](hyprland.md);
 - [Файловая система Linux](filesystem.md);
 - [Основные команды терминала](terminal.md);
-- [Снимки файловой системы со Snapper](snapper.md);
-- [Введение в Bash](bash-basics.md).
-
-## На заметку
+- [Введение в Bash](bash-basics.md);
 - [Погружение в Git](git.md);
-- [Установка программ](apps.md).
+- [Docker](docker.md).
+
+### Arch
+- [Установка Arch](first-steps.md);
+- [Установка программ](apps.md);
+- [Снимки файловой системы со Snapper](snapper.md);
+- [Настройка рабочего стола](hyprland.md).
 
 ## Компьютерные сети
 1. Введение:
@@ -45,3 +45,26 @@
     - [wireshark](net/md/wireshark.md) перехватывает сетевые пакеты в графическом интерфейсе;
     - [tcpdump](net/md/tcpdump-tshark.md) перехватывает сетевые пакеты в командной строке;
     - [nmap](net/md/nmap.md) ищет узлы и открытые порты в сети.
+
+## Программирование
+   - [Основы Python: условия, циклы, функции](py-basics-1.md);
+   - [Продолжение Python: библиотеки, работа с файлами, venv](py-basics-2.md);
+   - [Алгоритмы](algorithms.md);
+   - [Линейная алгебра на Python](py-algebra.md);
+   - [OSINT с помощью Python](py-osint.md).
+
+## Использованные источники
+### Ссылки
+
+1. [Курс Stepik - Поколение Python](https://stepik.org/course/58852/promo);
+2. [Python for OSINT. 21-day course for beginners](https://github.com/cipher387/python-for-OSINT-21-days/tree/main).
+
+### Литература
+
+| № | НАЗВАНИЕ | АВТОР | ГОД |
+| - | :--- | :--- | :--- |
+| 1 | [A Byte of Python](https://python.swaroopch.com/) | Swaroop C. | 2020 |
+| 2 | [Грокаем алгоритмы](https://www.piter.com/product/grokaem-algoritmy-illyustrirovannoe-posobie-dlya-programmistov-i-lyubopytstvuyuschih-2) | Адитья Бхаргава | 2017 |
+| 3 | [Devpractice Team. Линейная алгебра на Python](https://devpractice.ru/book-linalg-python/) | Абдрахманов М.И. | 2019 |
+| 4 | [Анализ пакетов: практическое руководство по использованию Wireshark и tcpdump для решения реальных проблем в локальных сетях](https://nostarch.com/packetanalysis3) | Крис Сандерс | 2019 |
+| 5 | [Head First Git](https://www.oreilly.com/library/view/head-first-git/9781492092506/) | Раджу Ганди | 2022 |
